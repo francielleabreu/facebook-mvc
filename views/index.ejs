@@ -10,15 +10,14 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link href="/public/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="title-page">
+    <div class="title-page p-4">
       <p class="h1">Welcome to Facebook</p>
     </div>
     <!-- Post -->
     <form method="POST" action="/add-message">
-      <div class="name-post">
+      <div class="name-post p-4" style="width: 50%">
         <div class="form-floating">
           <input
             class="form-control"
@@ -33,7 +32,7 @@
           </div>
         </div>
       </div>
-      <div class="post-message">
+      <div class="post-message p-4" style="width: 50%">
         <div class="form-floating">
           <textarea
             class="form-control"
@@ -48,17 +47,18 @@
           </div>
         </div>
       </div>
-      <div class="btn-add-post">
+      <div class="btn-add-post p-4">
         <button type="submit" class="btn btn-primary">Add a post</button>
       </div>
     </form>
-    <div class="posts">
+    <div class="posts ml-4">
       <% if (result.length > 0 ) { %>
-      <h1>Last posts</h1>
+      <h1 class="last-posts p-4">Last posts</h1>
       <% result.forEach(element => { %>
       <div class="card" style="width: 18rem">
-        <div class="card-body">
+        <div class="card-body p-4">
           <h5 class="card-title"><%= element.name %></h5>
+          <small><%= element.createdAt.toLocaleString() %></small>
           <p class="card-text"><%= element.message %></p>
           <a href="/feed/<%= element.id %>" class="card-link">See more</a>
         </div>

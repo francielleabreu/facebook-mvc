@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>The Facebook Challenge</h1>
-    <p>This is a web project developed as part of the Matrix Master Bootcamp in Rotterdam, the Netherlands. The goal of this challenge is to create a posts page where you can publish posts. Furthermore, it is possible to edit and delete the post.</p>
+    <p>This is a web project developed as part of the Matrix Master Bootcamp in Rotterdam, the Netherlands. The goal of this challenge is to create a posts page where you can publish posts. In addition, it is possible to edit and delete the post.</p>
     <h2>Installation and Setup</h2>
     <ol>
         <li>Clone this repository.</li>
@@ -17,6 +17,6 @@
     <p>`npm install`</p>
     <h2>Start the server:</h2>
     <p>`npm run start`</p>
-    <p>The server will run on `http://localhost:3000`.</p>
+    <p>The server will run on `http://localhost:3000/feed.</p>
 </body>
 </html>

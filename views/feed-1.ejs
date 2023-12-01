@@ -18,6 +18,7 @@
     <div class="card" style="width: 18rem">
       <div class="card-body">
         <h5 class="card-title"><%= result.name %></h5>
+        <small><%= result.createdAt.toLocaleString() %></small>
         <p class="card-text"><%= result.message %></p>
         <form method="GET" action="/feed/edit/<%= result._id %>">
           <button type="submit">Edit</button>
